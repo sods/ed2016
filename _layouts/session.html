@@ -17,7 +17,7 @@ layout: default
 
     {{ content }}
 
-    {% for post in site.posts %}
+    {% for post in site.posts | reversed %}
     {% unless post.layout == "day" %}
     {% if post.date == page.date %}
     <p><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></p>
