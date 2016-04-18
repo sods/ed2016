@@ -1,8 +1,9 @@
 ---
 title:  Morning Session
 layout: session
-tagline: 
+tagline: Morning Session
 show_abstracts: true
+time: "8:45"
 room: Room Number
 talks:
 - title: "Arrivals"

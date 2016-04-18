@@ -1,9 +1,10 @@
 ---
 title:  Afternoon Session
 layout: session
-tagline: 
+tagline: Afternoon Session
 show_abstracts: true
 room: Room Number
+time: "13:15"
 talks:
 - title: "TBA"
   speaker: "Tony Ryan"
