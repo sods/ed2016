@@ -33,7 +33,7 @@ layout: default
     {% endif %}
 
     {% for talk in page.talks %}
-    <br>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %}  <b>{% if talk.abstract and page.show_abstracts%}<a class='talk' href='#{{talk.speaker}}'>{{ talk.title }}</a>{% else %}{{talk.title}}{% endif %}</b> {% if talk.url %}<a href="{{ talk.url }}">{% endif %}{{ talk.speaker }}{% if talk.url %}</a>{% endif %}</br>
+    {% include talk.html %}
     {% endfor %}
     
     
