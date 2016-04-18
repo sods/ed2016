@@ -17,8 +17,8 @@ layout: default
 
     {{ content }}
 
-    {% for post in site.posts | reversed %}
-    {% unless post.layout == "day" %}
+    {% for post in site.posts reversed %}
+    {% unless post.layout == "session" %}
     {% if post.date == page.date %}
     <p><a href="{{ site.baseurl }}/{{ post.url }}">{{ post.title }}</a></p>
     {% endif %}
@@ -33,7 +33,7 @@ layout: default
     {% endif %}
 
     {% for talk in page.talks %}
-    <br>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %}  <b>{% if talk.abstract and page.show_abstracts%}<a class='talk' href='#{{talk.speaker}}'>{{ talk.title }}</a>{% else %}{{talk.title}}{% endif %}</b> {{ talk.speaker }}</br>
+    <br>{{ talk.start }} {% if talk.end %}- {{ talk.end }}{% endif %}  <b>{% if talk.abstract and page.show_abstracts%}<a class='talk' href='#{{talk.speaker}}'>{{ talk.title }}</a>{% else %}{{talk.title}}{% endif %}</b> {% if talk.url %}<a href="{{ talk.url }}">{% endif %}{{ talk.speaker }}{% if talk.url %}</a>{% endif %}</br>
     {% endfor %}
     
     
