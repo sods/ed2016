@@ -38,8 +38,10 @@ There are some include files for bits of html which are need about the place.
 
 ```
 _includes/listperson.html
-_includes/map.html
-_includes/google_tracking_code.html
 _includes/listsponsor.html
 _includes/listtalk.html
+_includes/listmulti.html
+_includes/listsingle.html
+_includes/map.html
+_includes/google_tracking_code.html
 ```
