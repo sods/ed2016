@@ -13,9 +13,9 @@ $ rm -rf confweb.git
 
 Then you can clone the new website as normal.
 
-The main settings can be found in the ```_config.yml``` file.
+The main settings can be found in the ```_config.yml``` file. They include conference location, name, year, days of operation.
 
-The base site is created with
+To create the conference site, the base site is created with
 
 ```
 $ jekyll site new .
@@ -45,3 +45,5 @@ _includes/listsingle.html
 _includes/map.html
 _includes/google_tracking_code.html
 ```
+
+Then the sessions themselves are stored in the ```_posts``` directory. Each session is recorded as post in the format ```YYYY-MM-DD-session-name.md```, and inside each session is the list of speakers and talks. See example session for details.
