@@ -38,22 +38,9 @@ layout: default
     
     {% if page.show_abstracts %}
     <h1 style='font-size:2em'>Abstracts</h1>
-<!--    abstracts-->
-    {% for talk in page.talks %}
-        {% if talk.abstract %}
-
-        <br>
-<h4 id='{{talk.speaker}}' style='margin-bottom:0'><b>{{ talk.title }}</b></h4>
-            {{ talk.speaker }}
-
-
-            <p style='margin-top:1em'>
-                {{ talk.abstract }}
-            </p>
-        </br>
-        {% endif %}
-    {% endfor %}
-
+    <!--    abstracts-->
+    {% assign talks = page.talks %}
+    {% include listabstracts.html %}
     {% endif %}
 
   </article>

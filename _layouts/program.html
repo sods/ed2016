@@ -27,6 +27,15 @@ title: Program
 
   </ul>
 
+  {% if page.show_abstracts %}
+  <h1 style='font-size:2em'>Abstracts</h1>
+  <!--    abstracts-->
+  {% for post in site.posts reversed %}
+  {% assign talks = post.talks %}
+  {% include listabstracts.html %}
+  {% endfor %}
+  {% endif %}
+
   
 </article>
 
