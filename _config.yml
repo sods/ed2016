@@ -24,9 +24,9 @@ youtube:
   width: 560
 
 conference:
-  room: G14
-  venue: 9 Mappin Street
-  location: Sheffield, UK
+  room: Lecture Theatre 8
+  venue: Diamond Building, 32 Leavygreave Rd
+  location: Sheffield, S3 7RD,  UK
   registration_url: "https://www.eventbrite.co.uk/e/entropy-day-2016-tickets-24770521296"
   name: Entropy Day
   year: 2016
@@ -45,8 +45,8 @@ map:
   show: True
   mapbox:
     latitude: 53.3819 # latitude of map center
-    longitude: -1.4793 # longitude of map center
-    map_id: lawrennd.pnghko26 # mapbox id
+    longitude: -1.483 # longitude of map center
+    map_id: lawrennd.068bmgf6 # mapbox id
     access_token: "pk.eyJ1IjoibGF3cmVubmQiLCJhIjoiY2luNmUyN2psMDB2MXdlbTJib3dmM3BsOSJ9.OpJ8Nc0xOGyNKZtAAsLECQ" # mapbox access token
     zoom_level: 17
     width: 100%
